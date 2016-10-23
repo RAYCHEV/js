@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Basics of canvas</title>
-    <style>
-        canvas {
-            border: 2px solid black;
-        }
-    </style>
-</head>
-<body>
-    <canvas id="rect" width="800px" height="600px"></canvas>
-    <script>
-        var canvas = document.getElementById("rect");
-        var fig = canvas.getContext("2d");
-
-        fig.fillStyle= "orange";
-        fig.strokeStyle = "tomato";
-        fig.lineWidth = "5";
-
-        //shape from line
-        fig.beginPath();
-        fig.moveTo(20, 20);
-        fig.lineTo(50, 50);
-        fig.lineTo(100,50);
-        fig.closePath();
-        fig.fill();
-
-        fig.stroke();
-
-        //arc
-        fig.beginPath(200, 200);
-        fig.arc(400, 500, 100, rad(0), rad(90), false);
-        fig.fill()
-        fig.stroke();
-
-        function rad(deg) {
-            return deg * Math.PI / 180;
-        }
-    </script>
-</body>
+<html>
+    <head>
+        <title>
+            A test page
+        </title>
+    </head>
+    <body>
+    <div id = "title">
+        <h1> My title</h1>
+        </div>
+    <div id = "body">
+    <ul id = "abc">
+        <li>Name</li>
+        <li>age</li>
+        <li>profesion</li>
+        <li>sex</li>
+    </ul>    
+    
+    </div>
+        <script>
+            
+            var newLi = document.createElement("li");
+            
+            var liText = document.createTextNode("ok");
+            newLi.appendChild(liText);
+            
+            document.getElementById("abc").appendChild(newLi);
+            
+            console.log("@@@@@@@@@@@STARTING MY CODE----");
+            
+            console.log("--------END OF MY CODE@@@@@@@@@");
+            
+        </script>
+    </body>
 </html>

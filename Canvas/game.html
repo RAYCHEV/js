@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics of canvas</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="rect" width="400px" height="300px"></canvas>
+    <script>
+        var canvas = document.getElementById("rect");
+        var fig = canvas.getContext("2d");
+        
+          fig.moveTo(40,40);
+        fig.fillStyle= "orange";
+        fig.strokeStyle = "tomato";
+        
+        fig.rect(10,10,10,10);
+        
+      
+        
+                fig.stroke();
+
+//        //shape from line
+//        fig.beginPath();
+//        fig.moveTo(20, 20);
+//        fig.lineTo(50, 50);
+//        fig.lineTo(100,50);
+//        fig.closePath();
+//        fig.fill();
+//
+//        fig.stroke();
+//
+//        //arc
+//        fig.beginPath();
+//        fig.moveTo(200,200);
+//        fig.arc(40, 50, 10, rad(0), rad(90), false);
+//        fig.fill()
+//        fig.stroke();
+
+        function rad(deg) {
+            return deg * Math.PI / 180;
+        }
+    </script>
+</body>
+</html>
