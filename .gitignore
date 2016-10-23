@@ -2,4 +2,4 @@
 
 *.kur
 .idea/*
-*.txt/*
+*.txt*
