@@ -2,4 +2,11 @@
 
 *.kur
 .idea/*
-*.txt*
+*.txt
+*.txt.*
+*.ignore
+*.ignore.*
+ignore.*
+* ignore *
+ignore *
+* ignore*
